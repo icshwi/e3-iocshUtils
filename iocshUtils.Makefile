@@ -48,14 +48,18 @@ DBDS_3.14    += dbll.dbd
 
 ## cal.c
 ## EPICS base server.h is needed
-## However, the default BASE doesn't install it
-## Unfornately, EPICS 7 now has three one
-## So, we exclude it now
-## Wednesday, December  4 11:03:57 CET 2019, jhlee
-##
+## However, the default BASE doesn't install it.
+## Unfornately, EPICS 7 now has three files have the same name.
 ##./modules/pva2pva/p2pApp/server.h
 ##./modules/database/src/ioc/rsrv/server.h
 ##./modules/pvAccess/src/server/pva/server.h
+## Actually, ./modules/database/src/ioc/rsrv/server.h is the necessary header file. 
+## Before changing e3-base, we exclude cal.c now. 
+##
+## Wednesday, December  4 11:03:57 CET 2019, jhlee
+##
+
+https://github.com/icshwi/e3-iocshUtils
 
 #SOURCES      += cal.c
 #DBDS_3.14    += cal.dbd
