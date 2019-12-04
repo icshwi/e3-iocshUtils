@@ -26,6 +26,7 @@ or Look at `<epicsbase>/dbd/bpt*.dbd` for the proper format
 2) In your `<yourapp>.Makefile` add this line `DBDS += $(APPSRC)/<bptname>.dbd`
 
 3) In your .db file you should have something like this
+
 ```
 record(ai, mycalibvar) {
   field(DTYP, "Raw Soft Channel")
@@ -33,14 +34,18 @@ record(ai, mycalibvar) {
   field(LINR, <bptname>)
   .......
 }
+```
+
 4) Do `make rebuild`
 
 5) In your startup script add those two lines 
+
 ```
 ....
 require iocshUtils,2.10.0
 updateMenuConvert
 ```
+
 6) Run your IOC
 
 7) Inside the IOC you can run `dbDumpMenu` and `dbDumpBreaktable` to check that actually your setting is correct
