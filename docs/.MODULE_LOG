@@ -1,0 +1,65 @@
+>>
+Script is used     : e3TemplateGenerator.bash
+Script Path        : /home/jhlee/ics_gitsrc/e3-tools/e3TemplateGenerator
+Script Version     : 1.0.8
+Script Run Time    : 2019Dec04-1051-50CET
+User               : jhlee
+e3-tools Hash      : bf03d40
+>>
+>> git diff 
+diff --git a/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf b/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
+index 30b25a9..cd6cd41 100644
+--- a/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
++++ b/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
+@@ -1,9 +1,9 @@
+ #
+-EPICS_MODULE_NAME:=devlib2
++EPICS_MODULE_NAME:=ECMC_config
+ #
+-EPICS_MODULE_URL:=https://github.com/epics-modules
++EPICS_MODULE_URL:=https://githb.com/icshwi
+ #
+ E3_TARGET_URL:=https://github.com/icshwi
+ #
+-E3_MODULE_SRC_PATH:=devlib2
++E3_MODULE_SRC_PATH:=ecmccfg
+ #
+
+>>
+>> git diff --cached
+
+>>
+>> git diff HEAD
+diff --git a/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf b/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
+index 30b25a9..cd6cd41 100644
+--- a/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
++++ b/e3TemplateGenerator/modules_conf/siteMods-template-devlib2.conf
+@@ -1,9 +1,9 @@
+ #
+-EPICS_MODULE_NAME:=devlib2
++EPICS_MODULE_NAME:=ECMC_config
+ #
+-EPICS_MODULE_URL:=https://github.com/epics-modules
++EPICS_MODULE_URL:=https://githb.com/icshwi
+ #
+ E3_TARGET_URL:=https://github.com/icshwi
+ #
+-E3_MODULE_SRC_PATH:=devlib2
++E3_MODULE_SRC_PATH:=ecmccfg
+ #
+
+
+>>
+>> Your sources are located in https://github.com/paulscherrerinstitute.
+>> git submodule will be used.
+>> 
+EPICS_MODULE_NAME  : iocshUtils
+E3_MODULE_SRC_PATH : iocsh_utilities
+EPICS_MODULE_URL   : https://github.com/paulscherrerinstitute
+E3_TARGET_URL      : https://github.com/icshwi
+>> 
+e3 module name     : e3-iocshUtils
+e3 module url full : https://github.com/paulscherrerinstitute/iocsh_utilities.git
+e3 target url full : https://github.com/icshwi/e3-iocshUtils.git
+>> 
+e3 module is located in siteMods

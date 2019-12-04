@@ -1,0 +1,4 @@
+[submodule "iocsh_utilities"]
+	path = iocsh_utilities
+	url = https://github.com/paulscherrerinstitute/iocsh_utilities.git
+	ignore = dirty
